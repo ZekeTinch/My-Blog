@@ -1,0 +1,26 @@
+.blog{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+.half{
+    height: 100%;
+    width: 50%;
+position: absolute;
+}
+
+.blog image{
+    width: 100px;
+
+}
