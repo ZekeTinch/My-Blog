@@ -1,0 +1,11 @@
+.list{
+    border: 2px solid black;
+    text-align: center;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.info{
+    position: bottom;
+border: 2px solid black;
+}

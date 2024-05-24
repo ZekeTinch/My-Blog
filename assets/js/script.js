@@ -1,29 +1,23 @@
 // username, title and content
-const submitEl = document.querySelector('#submit');
-const nameInput = document.querySelector('#username');
-const contentInput = document.querySelector('#content')
-const themeSwitcher = document.querySelector('#theme-switcher');
-const container = document.querySelector('.container');
+const button = document.getElementById('submit-btn');
+const userName = document.getElementById('userName')
 
-
-signUpButton.addEventListener('click', function() {
+button.addEventListener('click', function (event){
     event.preventDefault();
 
-    const blogs = JSON.parse(localStorage.getItem('blog')) || [];
+    let blogs = JSON.parse(localStorage.getItem('blogs')) || [];
 
-    const blog = {
-    userName: userName.value,
-    title: title.value,
-    content: content.value
+    let blog = {
+        userName: 'blah', // username.value,
+        title: 'blahhh', //title.value,
+        content: 'blahhhh' //content.value.trim(),
     };
 
     blogs.push(blog);
 
-    localStorage.setItem('blog', JSON.stringify(blogs));
-
-    window.location.href = 'blog.html'
+    localStorage.setItem('blogs', JSON.stringify(blogs));
+    location.assign('blog.html')
 })
-console.log('hit')
 
 
 
@@ -39,7 +33,3 @@ console.log('hit')
 //     }
 // });
 
-
-const array = function(submitEl, nameInput, contentInput){
-    
-}
