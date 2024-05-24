@@ -1,6 +1,9 @@
 // username, title and content
 const button = document.getElementById('submit-btn');
-const userName = document.getElementById('userName')
+const userName = document.querySelector('#userName');
+const title = document.querySelector('#title');
+const content = document.querySelector('#content');
+
 
 button.addEventListener('click', function (event){
     event.preventDefault();
@@ -8,9 +11,9 @@ button.addEventListener('click', function (event){
     let blogs = JSON.parse(localStorage.getItem('blogs')) || [];
 
     let blog = {
-        userName: 'blah', // username.value,
-        title: 'blahhh', //title.value,
-        content: 'blahhhh' //content.value.trim(),
+        userName: userName.value,
+        title: title.value,
+        content: content.value.trim(),
     };
 
     blogs.push(blog);

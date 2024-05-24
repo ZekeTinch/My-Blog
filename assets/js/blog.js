@@ -11,7 +11,7 @@ function renderBlogs() {
 
         const infoEl = `
             <div>
-                <p>${blog.username}</p>
+                <p>${blog.userName}</p>
                 <p>${blog.title}</p>
                 <p>${blog.content}</p>
             </div>
